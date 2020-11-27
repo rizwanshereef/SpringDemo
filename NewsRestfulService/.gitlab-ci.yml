@@ -1,0 +1,21 @@
+image: java:8-jdk
+image: maven:3.5.2-jdk-8
+
+stages:
+  - test
+  - build
+
+maven-build:
+  script: "mvn package"
+  stage: build
+
+maven-test:
+  script: "mvn test"
+  stage: test
+  
+variables:
+  MONGOHOST: localhost
+  MONGOPORT: 27017
+  MONGODB: newsdb
+
+

@@ -1,0 +1,23 @@
+[
+    {
+        "type": "formative assessment"
+    },
+    {
+        "type": "summative assessment"
+    },
+    {
+        "type": "knowledge based assessment"
+    },
+    {
+        "type": "practice assessment"
+    },
+    {
+        "type": "calibration assessment"
+    },
+    {
+        "type": "programming foundation"
+    },
+    {
+        "type": "problem solving"
+    }
+]

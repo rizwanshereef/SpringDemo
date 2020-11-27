@@ -1,0 +1,65 @@
+Algorithm
+Flowchart
+	Google Drawing -- create flowchart
+	Raptor
+Pseudocode
+
+testid16aug
+
+Concepts
+
+Programming Fundamentals
+Data Structure
+Networking Basics
+LINQ
+DotNET Architecture
+Language Basics
+Arrays
+Functions
+Class and Object
+OOPS
+Access Specifiers
+Interface
+Collections and Generics
+Exception Handling
+File Handling
+Multithreading
+Delegates
+Attributes
+Lambda
+TDD
+
+
+
+       "conceptName":[
+                 "Problem Solving and Logic Building",
+                 "Data Structure",
+                 "Networking Basics",
+                 "LINQ",
+                 "C#-dotnet basics",
+                 "dotnet Core",
+                 "C# Language Basics",
+                 "Programming Fundamentals",
+                 "Arrays",
+                 "Functions",
+                 "OOP Benefits",
+                 "Classes",
+                 "Objects",
+                 "Encapsulation",
+                 "Abstraction",
+                 "Access Specifiers",
+                 "Inheritance",
+                 "CompileTime Polymorphism",
+                 "RunTime Polymorphism",
+                 "Interface",
+                 "Collections",
+                 "Generics",
+                 "Exception Handling",
+                 "File Handling",
+                 "Multithreading",
+                 "Delegates",
+                 "Attributes",
+                 "Lambda",
+                 "TDD",
+                 "NUnit Testing Framework",
+                 "xUnit Testing Framework"

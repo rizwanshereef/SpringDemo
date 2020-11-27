@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+	<bean id="nlObj1"
+		class="com.stackroute.spring.ioc.di.newsLocation">
+
+		<constructor-arg>
+			<value>1</value>
+		</constructor-arg>
+
+		<constructor-arg>
+			<value>Pune</value>
+		</constructor-arg>
+
+		<constructor-arg>
+			<value>India</value>
+		</constructor-arg>
+
+	</bean>
+
+	<bean id="nlObj2"
+		class="com.stackroute.spring.ioc.di.newsLocation">
+
+		<constructor-arg>
+			<value>2</value>
+		</constructor-arg>
+
+		<constructor-arg>
+			<value>Bangalore</value>
+		</constructor-arg>
+
+		<constructor-arg>
+			<value>India</value>
+		</constructor-arg>
+
+	</bean>
+
+
+	<bean id="nlObj3"
+		class="com.stackroute.spring.ioc.di.newsLocation">
+
+		<constructor-arg>
+			<value>3</value>
+		</constructor-arg>
+
+		<constructor-arg>
+			<value>Chennai</value>
+		</constructor-arg>
+
+		<constructor-arg>
+			<value>India</value>
+		</constructor-arg>
+
+	</bean>
+
+
+
+	<bean id="nlObj4"
+		class="com.stackroute.spring.ioc.di.newsLocation">
+
+		<constructor-arg index="0" type="int" value="4"></constructor-arg>
+		<constructor-arg index="1" type="String" value="Delhi"></constructor-arg>
+		<constructor-arg index="2" type="String" value="India"></constructor-arg>
+
+	</bean>
+
+
+	<bean id="nObj1" class="com.stackroute.spring.ioc.di.News">
+
+		<constructor-arg index="0" type="int" value="10"></constructor-arg>
+		<constructor-arg index="1" type="String"
+			value="Sports"></constructor-arg>
+		<constructor-arg index="2" type="String"
+			value="IPL Running"></constructor-arg>
+
+
+		<constructor-arg index="3" type="java.util.List">
+
+			<list>
+				<ref bean="nlObj1"></ref>
+				<ref bean="nlObj2"></ref>
+			</list>
+
+		</constructor-arg>
+
+
+	</bean>
+
+	<bean id="nObj2" class="com.stackroute.spring.ioc.di.News" scope="prototype" init-method="" destroy-method="">
+
+		<constructor-arg index="0" type="int" value="10"></constructor-arg>
+		<constructor-arg index="1" type="String"
+			value="Sports"></constructor-arg>
+		<constructor-arg index="2" type="String"
+			value="IPL Running"></constructor-arg>
+
+
+
+		<constructor-arg index="3" type="java.util.List">
+
+			<list>
+				<ref bean="nlObj3"></ref>
+				<ref bean="nlObj4"></ref>
+			</list>
+
+		</constructor-arg>
+	</bean>
+</beans>
